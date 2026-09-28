@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(82, 90, 80);
+    font-family: Georgia;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    color: rgb(0, 195, 255);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.contenedor-libros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.libro {
+    background-color: rgb(57, 88, 100);
+    border: 2px solid rgb(2, 164, 240);
+    padding: 20px;
+    min-height: 190px;
+    box-sizing: border-box;
+    transition: transform 0.7;
+}
+
+.libro h2 {
+    color: rgb(3, 184, 255);
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.libro p {
+
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.disponible{
+    color: greenyellow;
+    font-weight: bold;
+}
+.no-disponible{
+    color: red;
+    font-weight: bold;
+}
+
+.libro:hover{
+    transform: scale(1.05);
+}
